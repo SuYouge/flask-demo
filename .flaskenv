@@ -1,0 +1,2 @@
+FLASK_APP=skeleton
+FLASK_DEBUG=1

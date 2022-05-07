@@ -1,0 +1,20 @@
+{% from 'bootstrap4/nav.html' import render_nav_item %}
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    {{ bootstrap.load_js() }}
+    {{ bootstrap.load_css() }}
+
+    <title> Skeleton Flask Demo </title>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="navbar-nav mr-auto">
+                {{ render_nav_item('home.hello', 'Home.Hello') }}
+                {{ render_nav_item('task1.hello', 'task1.Hello') }}
+            </div>
+        </nav>
+    </body>
+
+</head>
